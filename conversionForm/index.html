@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bill Huang</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<!-- My CSS -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div id="capture" class="container row">
+		<div class="rateForm col-12 col-md-6">
+			<h1>Quick Quote</h1>
+			<!-- <hr> -->
+			<form action="" class="rateForm_form">
+				<div class="rateForm_form__top">
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="">First Name <span>*</span></label>
+							<input type="text" class="form-control" id="" placeholder="First Name">
+						</div>
+						<div class="form-group col-md-6">
+							<label for="">Last Name <span>*</span></label>
+							<input type="text" class="form-control" id="" placeholder="Last Name">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="">Email</label>
+						<input type="email" class="form-control" id="" placeholder="Email">
+					</div>
+					<div class="form-row phone-number">
+						<div class="form-group col-4 col-sm-3 col-md-3 col-lg-2">
+							<select class="form-control" id="">
+								<option value="+61" selected>+61</option>
+								<option value="+61">+61</option>
+								<option value="+61">+61</option>
+								<option value="+61">+61</option>
+							</select>
+						</div>
+						<div class="form-group col-8 col-sm-9 col-md-9 col-lg-10">
+							<input type="text" class="form-control" id="" placeholder="Enter your phone">
+						</div>
+					</div>
+				</div>
+
+				<div class="rateForm_form__bottom">
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="">From Currency <span>*</span></label>
+							<select class="form-control" id="">
+								<option value="aud" selected>Australian Dollar (AUD)</option>
+								<option value="aud">Australian Dollar (AUD)</option>
+							</select>
+						</div>
+						<div class="form-group col-md-6">
+							<label for="">To Currency <span>*</span></label>
+							<select class="form-control" id="">
+								<option value="usd" selected>United States Dollar (USD)</option>
+								<option value="usd">United States Dollar (USD)</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="">Amount <span>*</span></label>
+							<input type="text" class="form-control" id="" value="25000" placeholder="25,000.00">
+						</div>
+					</div>
+					<div class="form-group text-center">
+						<button type="submit" class="btn">Get Quote</button>
+					</div>
+				</div>
+			</form>
+		</div>
+		<!-- /.rateForm -->
+
+		<div class="rate col-12 col-md-6">
+			<h1>Quick Quote</h1>
+			<!-- <hr> -->
+			<div class="rate_content">
+				<div class="rate_container">
+					<h2>Rate:</h2>
+					<h3>0.7618</h3>
+					<p>From</p>
+					<h4>AUD <span>25,000.00</span></h4>
+					<p>To</p>
+					<h4>USD <span>19,045.00</span></h4>
+					<div class="text-center">
+						<button type="submit" class="btn ">Start New Quote</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /.rate -->
+	</div>
+	<!-- /#capture -->
+</body>
+</html>

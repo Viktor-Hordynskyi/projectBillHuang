@@ -1,0 +1,125 @@
+*, *::before, *::after {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+html, body {
+	line-height: 1;
+}
+
+/* banner style */
+.banner {
+	font-family: 'Open Sans', sans-serif;
+}
+.banner-container {
+	background-color: #000000;
+	margin: 0 auto; /* I make a container with a banner in the middle */
+	padding: 50px; /* Indents for the banner */
+	height: 100vh; /* The block occupies the entire height of the screen */
+	width: 1200px; /* The width of the block with banner */
+}
+/* Banner container */
+.banner-image {
+	position: relative; /* Positioning of the container, so that in future our text and logo could be positioned relative to this container */
+	max-width: 500px; /* Maximum width of the container for the banner. If you set the static width, the banner will not be responsive */
+}
+/* Banner elements */
+.banner-image>img {
+	width: 100%; /* The width of our background image. If you do not set it to 100% it will go beyond the container */
+}
+a.banner-link {
+	background-color: rgba(0, 0, 0, .7); /* It is necessary to use RGBA because it can specify the transparency */
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex; /* It is necessary to use for reference either display="block" or display="flex", 
+										because the link is a line item, and we need to make it a block element. 
+										I use display="flex", because I want to make text behind the logo */
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	position: absolute; /* Absolute positioning in order to place the block at the bottom of the container */
+	bottom: 0;
+	left: 0;
+	text-decoration: none;
+	height: calc(100% / 3); /* I specify the height of the block with the logo as 100% of the container height divided by 3 */
+	width: 100%;
+}
+.banner-link img {
+	margin: 15px;
+	height: calc(100% - 30px); /* The logo height is 100% - 30px since (margin="15px") */
+}
+.banner-link p {
+	color: #ffffff;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex; /* To align the contents of a block */
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center; /* Align all elements in the center of the block (vertically) */
+	font-size: 30px;
+	font-weight: bold;
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+	.banner-container {
+		width: 100%;
+	}
+	.banner-link p {
+		font-size: 28px;
+	}
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+	.banner-container {
+		width: 100%;
+	}
+	.banner-link p {
+		font-size: 26px;
+	}
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+	.banner-container {
+		width: 100%;
+	}
+	.banner-link p {
+		font-size: 24px;
+	}
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+	.banner-container {
+		width: 100%;
+	}
+	.banner-link p {
+		font-size: 18px;
+	}
+}

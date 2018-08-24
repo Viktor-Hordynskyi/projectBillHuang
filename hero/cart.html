@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cart</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- My CSS -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+	<div class="main">
+		<div class="header">
+			<div class="logo">
+				<img src="img/logo3.png" alt="logo" />
+			</div>
+			<div class="menu">
+				<ul>
+					<li>
+						<a href="#">Home</a>
+					</li>
+					<li>
+						<a href="#">Shop &#9660;</a>
+						<div class="dropdown-menu">
+							<a href="#">Dropdown shop</a>
+							<a href="#">Dropdown shop</a>
+						</div>
+					</li>
+					<li>
+						<a href="#">Journal</a>
+					</li>
+					<li>
+						<a href="#">More &#9660;</a>
+						<div class="dropdown-menu">
+							<a href="#">Dropdown more</a>
+							<a href="#">Dropdown more</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="myCart">
+				<a href="#">My Cart (2) &#9660;</a>
+			</div>
+		</div>
+		<!-- /.header -->
+		
+		<div class="cart">
+			<h1>Shopping Cart</h1>
+			<div class="cart-container">
+				<div class="cart_title">
+					<div class="cart_title-product">Product</div>
+					<div class="cart_title-quantity">Quantity</div>
+					<div class="cart_title-total">Total</div>
+					<div class="cart_title-action">Action</div>
+				</div>
+				<hr />
+
+				<div class="cart_products">
+					<div class="cart_element">
+						<div class="cart_element-product">
+							<img src="img/product.jpg" alt="product" />
+							<div class="cart_element-product-description">
+								<p>kiriko</p>
+								<h2>Hand painted blue flat dish</h2>
+								<p>color: <span>white</span></p>
+							</div>
+						</div>
+						<div class="cart_element-quantity">
+							<div class="cart_element-quantity-number">1</div>
+							<div class="cart_element-quantity-moreLess">
+								<span>+</span>
+								<span>-</span>
+							</div>
+						</div>
+						<div class="cart_element-total">
+							<h3>$28.00</h3>
+						</div>
+						<div class="cart_element-action">
+							<h3>&#215;</h3>
+						</div>
+					</div>
+					<hr />
+
+					<div class="cart_element">
+						<div class="cart_element-product">
+							<img src="img/product.jpg" alt="product" />
+							<div class="cart_element-product-description">
+								<p>kiriko</p>
+								<h2>Hand painted blue flat dish</h2>
+								<p>color: <span>white</span></p>
+							</div>
+						</div>
+						<div class="cart_element-quantity">
+							<div class="cart_element-quantity-number">1</div>
+							<div class="cart_element-quantity-moreLess">
+								<span>+</span>
+								<span>-</span>
+							</div>
+						</div>
+						<div class="cart_element-total">
+							<h3>$28.00</h3>
+						</div>
+						<div class="cart_element-action">
+							<h3>&#215;</h3>
+						</div>
+					</div>
+					<hr />
+				</div>
+
+				<div class="cart_overview">
+					<p><span>cart overview</span><span></span></p>
+					<p><span>subtotal</span><span>$56.00</span></p>
+					<p><span>total</span><span>$56.00 CAD</span></p>
+				</div>
+				<hr />
+
+				<div class="cart_buttons">
+					<a href="#">continue <br>shopping</a>
+					<button>checkout ($56.00)</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /.cart -->	
+</div>
+<!-- /.main -->
+
+<!-- Need to be deleted when the project is end. -->
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>

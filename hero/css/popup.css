@@ -1,0 +1,109 @@
+.main {
+	background-color: #333;
+	padding: 50px;
+}
+.popup {
+	background-color: #ffffff;
+	width: 320px;
+	padding: 10px;
+}
+.popup hr {
+	border: 1px solid #dddddd;
+}
+.popup_element {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	padding-bottom: 20px;
+}
+.popup_element:last-child {
+	padding-bottom: 10px;
+}
+.popup_element-image {
+	padding-right: 10px;
+	width: 50%;
+}
+.popup_element-image img {
+	width: 100%;
+}
+.popup_element-description h1 {
+	font-size: 16px;
+	text-transform: uppercase;
+}
+.popup_element-description h1 span {
+	font-size: 12px;
+	text-transform: uppercase;
+}
+.popup_element-description p {
+	color: #a0a0a0;
+}
+.popup_element-description>span {
+	font-size: 14px;
+}
+.popup_element-action {
+	font-size: 24px;
+	font-weight: bold;
+}
+.popup_total {
+	color: #a0a0a0;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	padding: 10px 0;
+	text-transform: uppercase;
+}
+.popup_buttons button {
+	border: 0;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	height: 50px;
+	width: calc(100% / 2 - 10px);
+}
+.popup_buttons button:first-child {
+	background-color: transparent;
+	border: 1px solid #1d1d20;
+	margin-right: 5px;
+}
+.popup_buttons button:last-child {
+	background-color: #1d1d20;
+	border: 1px solid #1d1d20;
+	color: #ffffff;
+	margin-left: 5px;
+}
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) and (max-width: 1439px) {
+	
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+	
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+	
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+	
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+	
+}
